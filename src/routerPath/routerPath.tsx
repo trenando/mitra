@@ -1,5 +1,5 @@
 import { About } from "../pages/About/About";
-import { Home } from "../pages/Home/Home";
+import { HomeContainer } from "../pages/Home/HomeContainer";
 import { NotFound } from "../pages/NotFound/NotFound";
 import { Photo } from "../pages/Photo/Photo";
 import { Routes } from "./RouterTypes";
@@ -8,8 +8,8 @@ export const route: Routes = {
   home: {
     path: "/",
     link: "/",
-    name: "Главная",
-    element: <Home />,
+    name: "Галерея",
+    element: <HomeContainer />,
   },
   about: {
     path: "/about",
@@ -20,7 +20,6 @@ export const route: Routes = {
   photo: {
     path: "/photo",
     link: "/photo",
-    name: "Фото",
     element: <Photo />,
   },
   pageNotFound: {

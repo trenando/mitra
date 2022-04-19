@@ -5,7 +5,7 @@ interface OtherRoute {
 
 interface Route extends OtherRoute {
   link: string;
-  name: string;
+  name?: string;
 }
 
 export type Routes = {

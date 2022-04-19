@@ -1,11 +1,5 @@
-type photosResponce = {
-  albumId: number;
-  id: number;
-  title: string;
-  url: string;
-  thumbnailUrl: string;
-};
+import { HomePhotos } from "../../pages/Home/HomeTypes";
 
 export type PhotosAPI = {
-  getPhotos(): Promise<photosResponce[]>;
+  getPhotos(): Promise<HomePhotos[]>;
 };

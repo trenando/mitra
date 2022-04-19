@@ -5,7 +5,7 @@ const instance = axiosInstance("/");
 
 export const photosAPI: PhotosAPI = {
   async getPhotos() {
-    const res = await instance.get("photos");
+    const res = await instance.get("photos?_limit=24");
     return res.data;
   },
 };
