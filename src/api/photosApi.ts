@@ -8,4 +8,8 @@ export const photosAPI: PhotosAPI = {
     const res = await instance.get("photos?_limit=24");
     return res.data;
   },
+  async getPhotoById({ id }) {
+    const res = await instance.get(`photos/${id}`)
+    return res.data;
+  }
 };

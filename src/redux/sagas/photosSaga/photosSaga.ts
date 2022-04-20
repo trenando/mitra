@@ -9,7 +9,7 @@ export function* watchPhotosSaga(): Generator<ForkEffect<never>, void, unknown> 
 }
 
 export function* photosSaga() {
-  delay(500);
+  yield delay(500);
   //@ts-ignore
   let data = yield call(photosAPI.getPhotos);
   data = createSubArray(data, 6);
