@@ -2,6 +2,7 @@ import { HomePhotos } from "../../../../pages/Home/HomeTypes";
 import { ActionFunction, PayloadActionFunction } from "../../../GlobalReduxTypes";
 import { GET_PHOTOS, RECEIVE_PHOTOS } from "../photosActions";
 import { ReceivePhotoByIdAction } from "./PhotoByIdActionsTypes";
+import { UnmountAction } from "./UnmountPhotoTypes";
 
 export type PhotosAction = {
   type: typeof GET_PHOTOS;
@@ -15,4 +16,4 @@ export type ReceivePhotosAC = PayloadActionFunction<ReceivePhotosAction, Array<A
 
 export type PhotosAC = ActionFunction<PhotosAction>;
 
-export type PhotosActions = ReceivePhotosAction | ReceivePhotoByIdAction;
+export type PhotosActions = ReceivePhotosAction | ReceivePhotoByIdAction| UnmountAction;

@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px;
+    @media (max-width: 767px) {
+        max-width: 400px;
+    }
+    @media (max-width: 525px) {
+        max-width: 200px;
+    }
+    span{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

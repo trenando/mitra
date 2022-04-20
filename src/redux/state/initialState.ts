@@ -2,5 +2,11 @@ import { StateType } from "./StateTypes";
 
 export const initialState: StateType = {
   photos: [],
-  photo: null
+  photo: {
+    albumId: null,
+    id: null,
+    title: "",
+    url: "",
+    thumbnailUrl: "",
+  }
 };
