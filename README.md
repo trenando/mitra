@@ -1,7 +1,5 @@
 # Mitra test
 
-This is the frontend part of the project, for better experience please use it with https://github.com/trenando/game-project-backend together.
-
 ## Getting start
 
 To install the project please download it or clone, and then use 
