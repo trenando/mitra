@@ -1,7 +1,7 @@
 import { About } from "../pages/About/About";
 import { HomeContainer } from "../pages/Home/HomeContainer";
 import { NotFound } from "../pages/NotFound/NotFound";
-import { Photo } from "../pages/Photo/Photo";
+import { PhotoContainer } from "../pages/Photo/PhotoContainer";
 import { Routes } from "./RouterTypes";
 
 export const route: Routes = {
@@ -18,9 +18,10 @@ export const route: Routes = {
     element: <About />,
   },
   photo: {
-    path: "/photo",
+    path: "/photo/:id",
     link: "/photo",
-    element: <Photo />,
+    name: "Подробнее",
+    element: <PhotoContainer />,
   },
   pageNotFound: {
     path: "*",

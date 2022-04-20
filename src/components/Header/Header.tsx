@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Image, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { route } from "../routerPath/routerPath";
+import { route } from "../../routerPath/routerPath";
 
 export const Header = () => {
   return (
@@ -18,6 +18,14 @@ export const Header = () => {
                 <NavDropdown.Item as={Link} to={route.about.link}>
                   {route.about.name}
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.ItemText>
+                  <Image roundedCircle={true} src="https://via.placeholder.com/50" />
+                  <NavDropdown.ItemText style={{ paddingLeft: 0, paddingRight: 0 }}>Константин</NavDropdown.ItemText>
+                  <NavDropdown.Item style={{ paddingLeft: 0, paddingRight: 0 }} href="mailto: drayver4@mail.ru">
+                    drayver4@mail.ru
+                  </NavDropdown.Item>
+                </NavDropdown.ItemText>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

@@ -1,0 +1,27 @@
+.image {
+    opacity: 1;
+}
+
+.block {
+    position: relative;
+    &:hover {
+        .image {
+            opacity: 0.3;
+            transition: opacity 0.2s linear;
+        }
+        .nav {
+            display: flex !important;
+        }
+    }
+}
+
+.nav {
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
