@@ -9,9 +9,8 @@ export function* watchPhotoSaga(): Generator<ForkEffect<never>, void, unknown> {
     yield takeEvery(GET_PHOTO_BY_ID, photoSaga);
 }
 
-export function* photoSaga(action: PhotoByIdAction) {
+export function* photoSaga(action: PhotoByIdAction):any {
     yield delay(500);
-    //@ts-ignore
     const data = yield call(photosAPI.getPhotoById, action.payload)
     yield put(receivePhotoByIdAC(data));
 }

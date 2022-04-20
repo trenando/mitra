@@ -8,9 +8,8 @@ export function* watchPhotosSaga(): Generator<ForkEffect<never>, void, unknown> 
   yield takeEvery(GET_PHOTOS, photosSaga);
 }
 
-export function* photosSaga() {
+export function* photosSaga():any {
   yield delay(500);
-  //@ts-ignore
   let data = yield call(photosAPI.getPhotos);
   data = createSubArray(data, 6);
   yield put(receivePhotosAC(data));
